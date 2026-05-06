@@ -640,6 +640,41 @@
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .float-call .lbl { display: none; }
   }
+
+  /* === ADDED: service images, watermark, nav logo, address emphasis === */
+  .nav-logo-img { height: 42px; width: auto; display: block; border-radius: 5px; }
+  .hero { position: relative; }
+  .hero-watermark {
+    position: absolute; inset: 0;
+    background: url('autokosmos_full_logo_white_background.png') center center / contain no-repeat;
+    opacity: 0.06;
+    filter: grayscale(100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .address-emphasis {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+  .usl-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    display: block;
+    background: #1a1a1a;
+  }
+
 </style>
 </head>
 <body>
@@ -647,8 +682,8 @@
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">
-    <div class="logo-box">AS</div>
-    <div class="logo-name">AUTO <span>SERVIS</span></div>
+    <img src="logo.png" alt="Autokosmos" class="nav-logo-img" />
+    <div class="logo-name">AUTO<span>KOSMOS</span></div>
   </a>
   <ul>
     <li><a href="#simptomi">Problemi</a></li>
@@ -660,6 +695,7 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
+  <div class="hero-watermark"></div>
   <div class="hero-bg-word">SERVIS</div>
   <div class="hero-stripe"></div>
   <div class="hero-content">
@@ -667,6 +703,7 @@
       <div class="badge-dot"></div>
       Subotica – Durmitorska 2
     </div>
+    <div class="address-emphasis">📍 Tačno preko puta glavnog zadnjeg ulaza Buvljaka</div>
     <h1>AUTO<br><span class="accent">PROBLEMI?</span></h1>
     <div class="hero-tagline">Rešavamo brzo i sigurno.</div>
     <p class="hero-desc">Kompletne auto usluge na jednom mestu — od dijagnostike do mehanike, elektrike, klime, limarije i izduvnih sistema.</p>
@@ -795,6 +832,8 @@
   <div class="usluge-grid">
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/046a4742-08e7-4e30-8631-3de18f404a8d.png" alt="Auto dijagnostika" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">💻</div>
         <div class="usl-title">Auto dijagnostika</div>
@@ -812,6 +851,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/8c60c41a-e5bd-45b9-ad81-6112d080a3f4.png" alt="Dijagnostika i čišćenje sistema" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">🧹</div>
         <div class="usl-title">Dijagnostika i čišćenje sistema</div>
@@ -828,6 +869,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/75f79741-c01b-4bea-90ba-df671a6abec5.png" alt="Auto mehaničar" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">🔧</div>
         <div class="usl-title">Auto mehaničar</div>
@@ -843,6 +886,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/944cee20-3d83-4ed4-b3d4-4183c391b9a8.png" alt="Auto električar" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">⚡</div>
         <div class="usl-title">Auto električar</div>
@@ -858,6 +903,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/63f9a396-2354-43af-a1a9-d9fda2a461c2.png" alt="Auto klima" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">❄️</div>
         <div class="usl-title">Auto klima</div>
@@ -873,6 +920,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/e4eb149c-2782-4bf3-8f11-b8ad01e2af11.png" alt="Auspuh servis" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">💨</div>
         <div class="usl-title">Auspuh servis</div>
@@ -887,6 +936,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/fab15d0b-025c-43ed-8060-0c3f4ae20d00.png" alt="Auto limar – farbar" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">🔨</div>
         <div class="usl-title">Auto limar – farbar</div>
@@ -901,6 +952,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/0a313813-ff9a-49c7-aee0-38e5f8193b1a.png" alt="Auto usluge (dodatno)" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">✨</div>
         <div class="usl-title">Auto usluge (dodatno)</div>
@@ -916,6 +969,8 @@
     </div>
 
     <div class="usl-card">
+      <img src="autokosmos_service_images_9/31e26b74-a626-4364-9443-018ea5652ff5.png" alt="Auto otpad" class="usl-img" loading="lazy" />
+      
       <div class="usl-header">
         <div class="usl-ico">🚗</div>
         <div class="usl-title">Auto otpad</div>
