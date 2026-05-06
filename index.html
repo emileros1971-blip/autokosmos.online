@@ -666,17 +666,27 @@
     margin-bottom: 24px;
     font-size: 15px;
   }
-  .usl-img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 0;
-    margin-bottom: 22px;
-    display: block;
-    background: #1a1a1a;
+  .usluge-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+    align-items: start;
   }
 
-  .usl-list { padding: 0 28px; }
+  .usl-card {
+    padding: 0;
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .usl-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    background: var(--black);
+  }
 
 </style>
 </head>
@@ -835,152 +845,39 @@
   <div class="usluge-grid">
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/046a4742-08e7-4e30-8631-3de18f404a8d.png" alt="Auto dijagnostika" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">💻</div>
-        <div class="usl-title">Auto dijagnostika</div>
-      </div>
-      <ul class="usl-list">
-        <li>Čitanje grešaka</li>
-        <li>Brisanje grešaka</li>
-        <li>Kodiranje i čitanje trenutnih parametara</li>
-        <li>Štampanje kodova grešaka</li>
-        <li>Reprogramiranje motornog računara</li>
-        <li>Gašenje EGR sistema</li>
-        <li>Isključivanje FAP / DPF filtera</li>
-        <li>Gašenje AdBlue sistema</li>
-      </ul>
+      <img src="046a4742-08e7-4e30-8631-3de18f404a8d.png" alt="Auto dijagnostika" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/8c60c41a-e5bd-45b9-ad81-6112d080a3f4.png" alt="Dijagnostika i čišćenje sistema" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">🧹</div>
-        <div class="usl-title">Dijagnostika i čišćenje sistema</div>
-      </div>
-      <ul class="usl-list">
-        <li>Fizičko i mehaničko čišćenje</li>
-        <li>Usisne grane</li>
-        <li>Klapne na usisu</li>
-        <li>EGR ventil</li>
-        <li>Katalizator</li>
-        <li>DPF filter</li>
-        <li>Auspuh</li>
-      </ul>
+      <img src="8c60c41a-e5bd-45b9-ad81-6112d080a3f4.png" alt="Dijagnostika i čišćenje sistema" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/75f79741-c01b-4bea-90ba-df671a6abec5.png" alt="Auto mehaničar" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">🔧</div>
-        <div class="usl-title">Auto mehaničar</div>
-      </div>
-      <ul class="usl-list">
-        <li>Mali servis</li>
-        <li>Veliki servis</li>
-        <li>Popravka kočnica</li>
-        <li>Popravka motora</li>
-        <li>Popravka i zamena menjača</li>
-        <li>Popravka i zamena delova vešanja</li>
-      </ul>
+      <img src="75f79741-c01b-4bea-90ba-df671a6abec5.png" alt="Auto mehaničar" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/944cee20-3d83-4ed4-b3d4-4183c391b9a8.png" alt="Auto električar" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">⚡</div>
-        <div class="usl-title">Auto električar</div>
-      </div>
-      <ul class="usl-list">
-        <li>Servis i popravka svetala</li>
-        <li>Servis anlasera i alternatora</li>
-        <li>Popravka podizača stakla</li>
-        <li>Popravka centralne brave</li>
-        <li>Popravka i ugradnja radio uređaja</li>
-        <li>Popravka mernih instrumenata</li>
-      </ul>
+      <img src="944cee20-3d83-4ed4-b3d4-4183c391b9a8.png" alt="Auto električar" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/63f9a396-2354-43af-a1a9-d9fda2a461c2.png" alt="Auto klima" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">❄️</div>
-        <div class="usl-title">Auto klima</div>
-      </div>
-      <ul class="usl-list">
-        <li>Servis i provera hlađenja</li>
-        <li>Dopuna auto klime (gas i ulje)</li>
-        <li>Zamena filtera klime</li>
-        <li>Određivanje količine gasa</li>
-        <li>Zamena ulja kompresora</li>
-        <li>Remont kompresora klime</li>
-      </ul>
+      <img src="63f9a396-2354-43af-a1a9-d9fda2a461c2.png" alt="Auto klima" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/e4eb149c-2782-4bf3-8f11-b8ad01e2af11.png" alt="Auspuh servis" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">💨</div>
-        <div class="usl-title">Auspuh servis</div>
-      </div>
-      <ul class="usl-list">
-        <li>Zamena pregorelih delova</li>
-        <li>Krpljenje i zamena izduvnih sistema</li>
-        <li>Zamena srednjeg lonca</li>
-        <li>Zamena / isecanje / vađenje DPF filtera</li>
-        <li>Zamena / isecanje / vađenje katalizatora</li>
-      </ul>
+      <img src="e4eb149c-2782-4bf3-8f11-b8ad01e2af11.png" alt="Auspuh servis" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/fab15d0b-025c-43ed-8060-0c3f4ae20d00.png" alt="Auto limar – farbar" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">🔨</div>
-        <div class="usl-title">Auto limar – farbar</div>
-      </div>
-      <ul class="usl-list">
-        <li>Lakiranje</li>
-        <li>Varenje</li>
-        <li>Poliranje</li>
-        <li>Demontaža i montaža karoserije</li>
-        <li>Farbanje plastike</li>
-      </ul>
+      <img src="fab15d0b-025c-43ed-8060-0c3f4ae20d00 - Copy.png" alt="Auto limar – farbar" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/0a313813-ff9a-49c7-aee0-38e5f8193b1a.png" alt="Auto usluge (dodatno)" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">✨</div>
-        <div class="usl-title">Auto usluge (dodatno)</div>
-      </div>
-      <ul class="usl-list">
-        <li>Poliranje farova</li>
-        <li>Poliranje ogrebotina</li>
-        <li>Vraćanje sjaja komandnoj tabli</li>
-        <li>Tapaciranje i popravka enterijera</li>
-        <li>Zamena auto stakala</li>
-        <li>Manji limarski radovi</li>
-      </ul>
+      <img src="0a313813-ff9a-49c7-aee0-38e5f8193b1a - Copy.png" alt="Auto usluge dodatno" class="usl-img" loading="lazy" />
     </div>
 
     <div class="usl-card">
-      <img src="autokosmos_service_images_9/31e26b74-a626-4364-9443-018ea5652ff5.png" alt="Auto otpad" class="usl-img" loading="lazy" />
-      
-      <div class="usl-header">
-        <div class="usl-ico">🚗</div>
-        <div class="usl-title">Auto otpad</div>
-      </div>
-      <ul class="usl-list">
-        <li>Otkup neispravnih vozila</li>
-      </ul>
+      <img src="31e26b74-a626-4364-9443-018ea5652ff5.png" alt="Auto otpad" class="usl-img" loading="lazy" />
     </div>
 
   </div>
