@@ -667,25 +667,73 @@
     font-size: 15px;
   }
   .usluge-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 22px;
-    align-items: start;
+    align-items: stretch;
   }
 
   .usl-card {
-    padding: 0;
-    background: transparent;
+    background: var(--dark2);
     border: 1px solid #2a2a2a;
+    border-left: 3px solid var(--orange);
     border-radius: 4px;
-    overflow: hidden;
+    padding: 28px 26px 30px;
+    transition: border-color 0.25s, transform 0.2s, background 0.25s;
+    display: flex;
+    flex-direction: column;
   }
 
-  .usl-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    background: var(--black);
+  .usl-card:hover {
+    background: #1f1f1f;
+    border-color: var(--orange);
+    transform: translateY(-4px);
+  }
+
+  .usl-card .usl-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #2a2a2a;
+    position: relative;
+  }
+
+  .usl-card .usl-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0;
+    width: 40px; height: 2px;
+    background: var(--orange);
+  }
+
+  .usl-card .usl-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .usl-card .usl-list li {
+    font-size: 14px;
+    color: var(--gray-light);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+  }
+
+  .usl-card .usl-list li::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 8px;
   }
 
 </style>
@@ -845,39 +893,74 @@
   <div class="usluge-grid">
 
     <div class="usl-card">
-      <img src="046a4742-08e7-4e30-8631-3de18f404a8d.png" alt="Auto dijagnostika" class="usl-img" loading="lazy" />
+      <h3 class="usl-title">Dijagnostika i čišćenje sistema</h3>
+      <ul class="usl-list">
+        <li>Fizičko i mehaničko čišćenje</li>
+        <li>Usisne grane</li>
+        <li>Klapne na usisu</li>
+        <li>EGR ventil</li>
+        <li>Katalizator</li>
+        <li>DPF filter</li>
+        <li>Auspuh</li>
+      </ul>
     </div>
 
     <div class="usl-card">
-      <img src="8c60c41a-e5bd-45b9-ad81-6112d080a3f4.png" alt="Dijagnostika i čišćenje sistema" class="usl-img" loading="lazy" />
+      <h3 class="usl-title">Mehanika i servis</h3>
+      <ul class="usl-list">
+        <li>Mali servis</li>
+        <li>Veliki servis</li>
+        <li>Popravka kočnica</li>
+        <li>Popravka motora</li>
+        <li>Popravka i zamena menjača</li>
+        <li>Popravka i zamena delova vešanja</li>
+      </ul>
     </div>
 
     <div class="usl-card">
-      <img src="75f79741-c01b-4bea-90ba-df671a6abec5.png" alt="Auto mehaničar" class="usl-img" loading="lazy" />
+      <h3 class="usl-title">Auto elektrika</h3>
+      <ul class="usl-list">
+        <li>Servis i popravka svetala</li>
+        <li>Servis anlasera i alternatora</li>
+        <li>Popravka podizača stakla</li>
+        <li>Popravka centralne brave</li>
+        <li>Popravka i ugradnja radio uređaja</li>
+        <li>Popravka mernih instrumenata</li>
+      </ul>
     </div>
 
     <div class="usl-card">
-      <img src="944cee20-3d83-4ed4-b3d4-4183c391b9a8.png" alt="Auto električar" class="usl-img" loading="lazy" />
+      <h3 class="usl-title">Auto klima i hlađenje</h3>
+      <ul class="usl-list">
+        <li>Servis i provera hlađenja</li>
+        <li>Dopuna auto klime / gas i ulje</li>
+        <li>Zamena filtera klime</li>
+        <li>Određivanje količine gasa</li>
+        <li>Zamena ulja kompresora</li>
+        <li>Remont kompresora klime</li>
+      </ul>
     </div>
 
     <div class="usl-card">
-      <img src="63f9a396-2354-43af-a1a9-d9fda2a461c2.png" alt="Auto klima" class="usl-img" loading="lazy" />
+      <h3 class="usl-title">Izduvni sistemi</h3>
+      <ul class="usl-list">
+        <li>Zamena pregorelih delova</li>
+        <li>Krpljenje i zamena izduvnih sistema</li>
+        <li>Zamena srednjeg lonca</li>
+        <li>Zamena / isecanje / vađenje DPF filtera</li>
+        <li>Zamena / isecanje / vađenje katalizatora</li>
+      </ul>
     </div>
 
     <div class="usl-card">
-      <img src="e4eb149c-2782-4bf3-8f11-b8ad01e2af11.png" alt="Auspuh servis" class="usl-img" loading="lazy" />
-    </div>
-
-    <div class="usl-card">
-      <img src="fab15d0b-025c-43ed-8060-0c3f4ae20d00 - Copy.png" alt="Auto limar – farbar" class="usl-img" loading="lazy" />
-    </div>
-
-    <div class="usl-card">
-      <img src="0a313813-ff9a-49c7-aee0-38e5f8193b1a - Copy.png" alt="Auto usluge dodatno" class="usl-img" loading="lazy" />
-    </div>
-
-    <div class="usl-card">
-      <img src="31e26b74-a626-4364-9443-018ea5652ff5.png" alt="Auto otpad" class="usl-img" loading="lazy" />
+      <h3 class="usl-title">Otkup neispravnih vozila</h3>
+      <ul class="usl-list">
+        <li>Otkup svih marki i modela vozila</li>
+        <li>Isplata odmah na licu mesta</li>
+        <li>Besplatno odvozimo vozilo</li>
+        <li>Brza i jednostavna procedura</li>
+        <li>Pozovite i dobijte ponudu</li>
+      </ul>
     </div>
 
   </div>
